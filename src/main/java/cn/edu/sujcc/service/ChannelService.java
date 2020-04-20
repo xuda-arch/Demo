@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import cn.edu.sujcc.dao.ChannelRepository;
 import cn.edu.sujcc.model.Channel;
 
-/**Ìá¹©ÆµµÀÏà¹ØÒµÎñÂß¼­¡£
+/**æä¾›é¢‘é“ç›¸å…³ä¸šåŠ¡é€»è¾‘ã€‚
  * @author dell
  * 
  */
@@ -19,7 +19,7 @@ public class ChannelService {
 	private ChannelRepository repo;
 	
 	/**
-	 * »ñÈ¡Ò»¸öÆµµÀ
+	 * è·å–ä¸€ä¸ªé¢‘é“
 	 * @param id
 	 * @return
 	 */
@@ -33,15 +33,15 @@ public class ChannelService {
 	}
 	
 	/**
-	 * »ñÈ¡ËùÓĞÆµµÀ
-	 * @return ÆµµÀList
+	 * è·å–æ‰€æœ‰é¢‘é“
+	 * @return é¢‘é“List
 	 */
 	public List<Channel> getAllChannels(){
 		return repo.findAll();
 	}
 	
 	/**
-	 * É¾³ıÖ¸¶¨ÆµµÀ
+	 * åˆ é™¤æŒ‡å®šé¢‘é“
 	 * @param id
 	 * @return
 	 */
@@ -52,9 +52,9 @@ public class ChannelService {
 	}
 	
 	/**
-	 * ¸üĞÂÒ»¸öÆµµÀ
-	 * @param c ´ı¸üĞÂµÄÆµµÀ
-	 * @return ¸üĞÂºóµÄÆµµÀ
+	 * æ›´æ–°ä¸€ä¸ªé¢‘é“
+	 * @param c å¾…æ›´æ–°çš„é¢‘é“
+	 * @return æ›´æ–°åçš„é¢‘é“
 	 */
 	public Channel updateChannel(Channel c) {
 		Channel saved = getChannel(c.getId());
@@ -94,7 +94,7 @@ public class ChannelService {
 	}
 
 	/**
-	 * ĞÂ½¨ÆµµÀ
+	 * æ–°å»ºé¢‘é“
 	 * @param c
 	 * @return
 	 */
