@@ -11,11 +11,3 @@ class DiandianApplicationTests {
 	}
 
 }
-@SpringBootTest
-class DiandianApplication {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
